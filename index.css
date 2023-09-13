@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-header {
+    background-color: #ff5722;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+body {
+    height: 100vh;
+    /* background-color: rgba(111, 134, 143, 0.605); */
+    /* background-image: url("https://content.wepik.com/statics/16364283/preview-page0.jpg");
+    background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: #e6e1e178;
+    /* overflow:scroll; */
+}
+
+
+
+#header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(3, 2, 2, 0.5);
+}
+
+.container {
+    width: 50%;
+    margin-top: 6em;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-bottom: 2px solid #212526;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+}
+
+.item .content .text {
+    font-size: 1.125rem;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    width: 100%;
+}
+
+.item .content .text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.item .actions button {
+    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212526;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item .actions button:hover {
+    background-color: #212526;
+}
+
+/* responsiveness */
+@media screen and (max-width: 800px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 99%;
+        margin-top: 5em;
+    }
+}
